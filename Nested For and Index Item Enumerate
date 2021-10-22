@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 22 13:55:13 2021
+
+@author: t22375
+"""
+
+### NESTED FOR DONGUSU VE ENUMERATE FONKSİYONU GÖSTERİMİ
+
+for i in range (1, toplam_unsur_sayisi):
+    for index, item in enumerate(unsur_tanimlari_listesi_split [i]):
+        if unsur_tanimlari_listesi_split [i] [index] [-1].endswith ('ç'):
+            unsur_tanimlari_listesi_split [i] [index] [-1] = unsuz_yumusamasi_harfleri_listesi [0]
+        elif unsur_tanimlari_listesi_split [i] [index] [-1].endswith ('k'):
+            unsur_tanimlari_listesi_split [i] [index] [-1] = unsuz_yumusamasi_harfleri_listesi [1]
+        elif unsur_tanimlari_listesi_split [i] [index] [-1].endswith ('p'):
+            unsur_tanimlari_listesi_split [i] [index] [-1] = unsuz_yumusamasi_harfleri_listesi [2]
+        elif unsur_tanimlari_listesi_split [i] [index] [-1].endswith ('t'):
+            unsur_tanimlari_listesi_split [i] [index] [-1] = unsuz_yumusamasi_harfleri_listesi [3]
+        else:
+            unsur_tanimlari_listesi_split [i] [index] = item
